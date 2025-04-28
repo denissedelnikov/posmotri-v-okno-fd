@@ -80,7 +80,6 @@ ol {
   position: relative;
   height: 298px;
   overflow: auto;
-  padding-bottom: 3px;
 }
 
 .content__details {
@@ -251,9 +250,8 @@ ol {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: auto;
+  margin: 30px auto 3px;
   width: 98%; /*2% для коректного отображения рамки в фокусе */
-  margin-top: 30px;
 }
 
 .button:focus {
