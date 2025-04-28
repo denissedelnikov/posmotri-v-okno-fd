@@ -80,6 +80,7 @@ ol {
   position: relative;
   height: 298px;
   overflow: auto;
+  padding-bottom: 3px;
 }
 
 .content__details {
@@ -202,7 +203,7 @@ ol {
 
 .search-form__label:has(:focus-visible) {
   outline: 1px solid #fff;
-  outline-offset: -2px;
+  outline-offset: 2px;
 }
 
 .search-form__pseudo-checkbox {
@@ -247,9 +248,14 @@ ol {
 }
 
 .more-button {
-  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 98%; /*2% для коректного отображения рамки в фокусе */
   margin-top: 30px;
 }
+
 .button:focus {
   outline: none;
 }
@@ -265,7 +271,7 @@ ol {
 
 .button:focus-visible {
   outline: 1px solid currentColor;
-  outline-offset: -4px;
+  outline-offset: 2px;
 }
 
 .content__card-link_current {
@@ -291,5 +297,5 @@ ol {
 }
 
 .content__list-item {
-  padding: 3px 3px;
+  padding: 1px 3px;
 }
